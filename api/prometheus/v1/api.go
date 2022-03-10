@@ -29,9 +29,9 @@ import (
 
 	json "github.com/json-iterator/go"
 
-	"github.com/prometheus/common/model"
+	"github.com/flyingtang/common/model"
 
-	"github.com/prometheus/client_golang/api"
+	"github.com/flyingtang/client_golang/api"
 )
 
 func init() {

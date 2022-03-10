@@ -13,7 +13,7 @@
 
 package collectors
 
-import "github.com/prometheus/client_golang/prometheus"
+import "github.com/flyingtang/client_golang/prometheus"
 
 // NewGoCollector returns a collector that exports metrics about the current Go
 // process. This includes memory stats. To collect those, runtime.ReadMemStats
@@ -54,7 +54,7 @@ func NewGoCollector() prometheus.Collector {
 // the source repository (rather than the local file system). This is usually
 // accomplished by building from outside of GOPATH, specifying the full address
 // of the main package, e.g. "GO111MODULE=on go run
-// github.com/prometheus/client_golang/examples/random". If built without Go
+// github.com/flyingtang/client_golang/examples/random". If built without Go
 // module support, all label values will be "unknown". If built with Go module
 // support but using the source code from the local file system, the "path" will
 // be set appropriately, but "checksum" will be empty and "version" will be

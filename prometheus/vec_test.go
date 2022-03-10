@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"testing"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 )
 
 func TestDelete(t *testing.T) {

@@ -23,9 +23,9 @@ import (
 	"sync"
 
 	//nolint:staticcheck // Ignore SA1019. Need to keep deprecated package for compatibility.
+	"github.com/flyingtang/client_golang/prometheus/internal"
+	dto "github.com/flyingtang/client_model/go"
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/client_golang/prometheus/internal"
-	dto "github.com/prometheus/client_model/go"
 )
 
 type goCollector struct {
@@ -254,14 +254,14 @@ func memStatsFromRM(ms *runtime.MemStats, rm map[string]*metrics.Sample) {
 	ms.NextGC = lookupOrZero("/gc/heap/goal:bytes")
 
 	// N.B. LastGC is omitted because runtime.GCStats already has this.
-	// See https://github.com/prometheus/client_golang/issues/842#issuecomment-861812034
+	// See https://github.com/flyingtang/client_golang/issues/842#issuecomment-861812034
 	// for more details.
 	ms.LastGC = 0
 
 	// N.B. GCCPUFraction is intentionally omitted. This metric is not useful,
 	// and often misleading due to the fact that it's an average over the lifetime
 	// of the process.
-	// See https://github.com/prometheus/client_golang/issues/842#issuecomment-861812034
+	// See https://github.com/flyingtang/client_golang/issues/842#issuecomment-861812034
 	// for more details.
 	ms.GCCPUFraction = 0
 }

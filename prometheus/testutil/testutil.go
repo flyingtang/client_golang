@@ -42,12 +42,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/prometheus/common/expfmt"
+	"github.com/flyingtang/common/expfmt"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/internal"
+	"github.com/flyingtang/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus/internal"
 )
 
 // ToFloat64 collects all Metrics from the provided Collector. It expects that

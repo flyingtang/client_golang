@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/prometheus/common/model"
+	"github.com/flyingtang/common/model"
 )
 
 // MetricVec is a Collector to bundle metrics of the same name that differ in

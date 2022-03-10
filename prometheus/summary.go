@@ -26,7 +26,7 @@ import (
 	//nolint:staticcheck // Ignore SA1019. Need to keep deprecated package for compatibility.
 	"github.com/golang/protobuf/proto"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 )
 
 // quantileLabel is used for the label that defines the quantile in a

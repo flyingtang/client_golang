@@ -27,8 +27,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/internal"
+	"github.com/flyingtang/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus/internal"
 )
 
 func main() {

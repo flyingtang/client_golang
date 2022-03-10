@@ -23,13 +23,13 @@ import (
 	"time"
 
 	//nolint:staticcheck // Ignore SA1019. Need to keep deprecated package for compatibility.
+	"github.com/flyingtang/common/expfmt"
 	"github.com/golang/protobuf/proto"
-	"github.com/prometheus/common/expfmt"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/flyingtang/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus/promhttp"
 )
 
 func ExampleGauge() {

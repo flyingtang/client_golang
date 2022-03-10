@@ -19,7 +19,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 )
 
 // Counter is a Metric that represents a single numerical value that only ever

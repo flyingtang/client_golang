@@ -25,8 +25,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/flyingtang/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus/promhttp"
 )
 
 func main() {

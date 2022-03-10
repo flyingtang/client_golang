@@ -23,7 +23,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 )
 
 // ValueType is an enumeration of metric types that represent a simple value.

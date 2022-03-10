@@ -29,7 +29,7 @@ import (
 
 	json "github.com/json-iterator/go"
 
-	"github.com/prometheus/common/model"
+	"github.com/flyingtang/common/model"
 )
 
 type apiTest struct {

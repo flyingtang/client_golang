@@ -31,7 +31,7 @@
 //
 // See the documentation of the Pushgateway to understand the meaning of
 // the grouping key and the differences between Push and Add:
-// https://github.com/prometheus/pushgateway
+// https://github.com/flyingtang/pushgateway
 package push
 
 import (
@@ -44,10 +44,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/prometheus/common/expfmt"
-	"github.com/prometheus/common/model"
+	"github.com/flyingtang/common/expfmt"
+	"github.com/flyingtang/common/model"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus"
 )
 
 const (

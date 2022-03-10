@@ -18,7 +18,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/prometheus/client_golang/prometheus"
+	"github.com/flyingtang/client_golang/prometheus"
 )
 
 func TestDBStatsCollector(t *testing.T) {

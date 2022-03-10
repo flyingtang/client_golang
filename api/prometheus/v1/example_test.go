@@ -22,9 +22,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/prometheus/client_golang/api"
-	v1 "github.com/prometheus/client_golang/api/prometheus/v1"
-	"github.com/prometheus/common/config"
+	"github.com/flyingtang/client_golang/api"
+	v1 "github.com/flyingtang/client_golang/api/prometheus/v1"
+	"github.com/flyingtang/common/config"
 )
 
 func ExampleAPI_query() {
@@ -133,7 +133,7 @@ func ExampleAPI_queryRangeWithUserAgent() {
 func ExampleAPI_queryRangeWithBasicAuth() {
 	client, err := api.NewClient(api.Config{
 		Address: "http://demo.robustperception.io:9090",
-		// We can use amazing github.com/prometheus/common/config helper!
+		// We can use amazing github.com/flyingtang/common/config helper!
 		RoundTripper: config.NewBasicAuthRoundTripper("me", "defintely_me", "", api.DefaultRoundTripper),
 	})
 	if err != nil {
@@ -163,7 +163,7 @@ func ExampleAPI_queryRangeWithBasicAuth() {
 func ExampleAPI_queryRangeWithAuthBearerToken() {
 	client, err := api.NewClient(api.Config{
 		Address: "http://demo.robustperception.io:9090",
-		// We can use amazing github.com/prometheus/common/config helper!
+		// We can use amazing github.com/flyingtang/common/config helper!
 		RoundTripper: config.NewAuthorizationCredentialsRoundTripper("Bearer", "secret_token", api.DefaultRoundTripper),
 	})
 	if err != nil {

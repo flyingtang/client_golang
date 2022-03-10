@@ -26,10 +26,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/prometheus/common/expfmt"
-	"github.com/prometheus/procfs"
+	"github.com/flyingtang/common/expfmt"
+	"github.com/flyingtang/procfs"
 
-	dto "github.com/prometheus/client_model/go"
+	dto "github.com/flyingtang/client_model/go"
 )
 
 func TestProcessCollector(t *testing.T) {
